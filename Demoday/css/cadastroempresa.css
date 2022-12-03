@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --azul: #0236A6;
+    --ciano: #20ACE8;
+    --roxo: #B415F5;
+    --rosa: #FD5A8C;
+    --amarelo: #FED504;
+    --subtitulo: #010851;
+}
+
+html{
+    background: #F4F4F4;
+}
+
+.corpo .imagem{
+    width: 100rem;
+}
+
+.login{
+    border: 1.5px solid var(--azul);
+    border-radius: 10px;
+    width: 4rem;
+    text-align: center;
+}
+
+.cadastro{
+    border: 1.5px solid var(--azul);
+    border-radius: 10px;
+    width: 5rem;
+    text-align: center;
+}
+
+.corpo #cabecalho h1{
+    margin-left: 30px;
+}
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: fixed;
+    top: 0;
+    -webkit-box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+}
+
+#cabecalho .lista{
+    display: flex;
+    list-style-type: none;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 5%;
+}
+
+#cabecalho .lista a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    font-weight: 650;
+}
+
+#cabecalho .lista #selecionado{
+    color: #0236A6;
+}
+
+#cabecalho .lista a:hover{
+    color: #0236A6;
+}
+
+.logotipo{
+    width: 12rem;
+    margin-left: 20%;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(200, 200, 200);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0236a6;
+}
+
+.entrada{
+    width: 75rem;
+    height: 36rem;
+    background-color: #0236A6;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 6rem;
+    background: linear-gradient(to left, #FFFFFF 60%, #FFDA1C 40%);
+    -webkit-box-shadow: 2px 6px 27px -14px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 6px 27px -14px rgba(0,0,0,0.75);
+box-shadow: 2px 6px 27px -14px rgba(0,0,0,0.75);
+}
+
+.entrada img{
+    width: 25rem;
+    margin-top: 8rem;
+    margin-left: 4rem;
+}
+
+.cadastrocrianca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40.5%;
+    margin-top: 1rem;
+    position: absolute;
+}
+
+.cadastrocrianca h1{
+    font-size: 3rem;
+    color: #0236A6;
+}
+
+.cadastrocrianca input{
+    width: 29rem;
+    height: 2.5rem;
+    background: #F2F2F2;
+    border: 2px solid #DAD9D9;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 17px;
+}
+
+.cadastrocrianca input::placeholder{
+    color: #8F8B8B;
+    font-size: 15px;
+}
+
+.cadastrocrianca button{
+    width: 29rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 17px;
+    font-size: 20px;
+    color: #fdfdfd;
+    background: #0236A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.cadastrocrianca button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.cadastrocrianca button:hover{
+    background: #FFDA1C;
+    transition: all 0.5s ease;
+}
+
+.numeroenascimento{
+    display: flex;
+    margin-top: 15px;
+}
+
+.numero input{
+    margin-right: 5rem;
+}
+
+.numeroenascimento input{
+    width: 12rem;
+    height: 2rem;
+    background: #F2F2F2;
+    border: 2px solid #DAD9D9;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.numeroenascimento p{
+    color: #8F8B8B;
+}
+
+.icones{
+	display: inline-block;
+}
+
+.icones img{
+    margin-top: 10px;
+    width: 32px;
+    margin: 0 auto;
+}
+
+.icones #facebook{
+    margin-right: 50px;
+}
+
+.icones #twitter{
+    margin-left: 50px;
+}
+
+#check{
+    border: none;
+    width: 10px;
+}
+
+.juncao{
+    display: inline-block;
+}

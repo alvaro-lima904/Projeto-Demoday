@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --azul: #0236A6;
+    --ciano: #20ACE8;
+    --roxo: #B415F5;
+    --rosa: #FD5A8C;
+    --amarelo: #FED504;
+    --subtitulo: #010851;
+}
+
+.corpo .imagem{
+    width: 100rem;
+    position: relative;
+}
+
+.login{
+    border: 1.5px solid var(--azul);
+    border-radius: 10px;
+    width: 4rem;
+    text-align: center;
+}
+
+.cadastro{
+    border: 1.5px solid var(--azul);
+    border-radius: 10px;
+    width: 5rem;
+    text-align: center;
+}
+
+.corpo{
+    display: flex;
+    position: relative;
+    height: 80vh;
+    color: #fff;
+    position: relative;
+}
+
+.corpo #cabecalho h1{
+    margin-left: 30px;
+}
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: fixed;
+    z-index: 1000;
+    -webkit-box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+}
+
+#cabecalho .lista{
+    display: flex;
+    list-style-type: none;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 5%;
+}
+
+#cabecalho .lista a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    font-weight: 650;
+}
+
+#cabecalho .lista #selecionado{
+    color: #0236A6;
+}
+
+#cabecalho .lista a:hover{
+    color: #0236A6;
+}
+
+.logotipo{
+    width: 12rem;
+    margin-left: 20%;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(200, 200, 200);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0236a6;
+}
+
+.cadastroempresa{
+    background: linear-gradient(to left, #FDFDFD 65%, #20ACE8 30%);
+    position: absolute;
+    height: 75vh;
+    width: 70%;
+    top: 25%;
+    border-radius: 35px;
+    -webkit-box-shadow: 0px 3px 39px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 39px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 39px -10px rgba(0,0,0,0.75);
+    left: 14%;
+}
+
+.cadastroempresa img{
+    width: 20rem;
+    margin-top: 14%;
+    margin-left: 15px;
+    position: absolute;
+}
+
+.areacadastro{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.areacadastro input{
+    width: 25rem;
+    height: 5vh;
+    margin-left: 27rem;
+    border-radius: 35px;
+    margin-top: 25px;
+    padding-left: 10px;
+    outline: none;
+    border: 2px solid #0236a6;
+}
+
+.areacadastro textarea{
+    width: 25rem;
+    height: 7rem;
+    margin-left: 27rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: 2px solid #0236a6;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+}
+
+.areacadastro textarea::-webkit-scrollbar-thumb{
+    background-color: #0236a6;
+    border-radius: 15px;
+}
+
+.areacadastro textarea::-webkit-scrollbar{
+    border-radius: 15px;
+}
+
+.areacadastro button{
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 35px;
+    border: none;
+    background: #20ACE8;
+    color: #fff;
+    margin-top: 35px;
+    margin-left: 43%;
+    transition: 0.5s all ease;
+}
+
+.areacadastro button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button:hover{
+    transition: 0.5s all ease;
+    background: #FD5A8C;
+}
+
+.cadastroempresa p{
+    font-size: 3rem;
+    color: #20ACE8;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 46.2%;
+    margin-top: 2rem;
+    padding: 0;
+    display: flex;
+}
+
+.complexo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.finalparte{
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+}
+
+.finalparte h1{
+    margin-left: 7rem;
+}
+
+.finalparte img{
+    width: 30rem;
+    height: 20rem;
+}
+
+.finalparte button{
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #0236a6;
+    color: #FFFFFF;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s all ease;
+}
+
+.finalparte button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.finalparte button:hover{
+    transition: 0.5s all ease;
+    background: #FD5A8C;
+}
+
+.finalparte p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+

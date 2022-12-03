@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --azul: #0236A6;
+    --ciano: #20ACE8;
+    --roxo: #B415F5;
+    --rosa: #FD5A8C;
+    --amarelo: #FED504;
+    --subtitulo: #010851;
+}
+
+.login{
+    border: 1.5px solid var(--azul);
+    border-radius: 10px;
+    width: 4rem;
+    text-align: center;
+}
+
+.cadastro{
+    border: 1.5px solid var(--azul);
+    border-radius: 10px;
+    width: 5rem;
+    text-align: center;
+}
+
+.corpo{
+    display: flex;
+    background: #FD5A8C;
+    height: 80vh;
+    position: relative;
+}
+
+.corpo #cabecalho h1{
+    margin-left: 30px;
+}
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: fixed;
+    z-index: 1000;
+    -webkit-box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+}
+
+#cabecalho .lista{
+    display: flex;
+    list-style-type: none;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 5%;
+}
+
+#cabecalho .lista a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    font-weight: 650;
+}
+
+#cabecalho .lista #selecionado{
+    color: #0236A6;
+}
+
+#cabecalho .lista a:hover{
+    color: #0236A6;
+}
+
+.corpo .container{
+    height: 40vh;
+    position: absolute;
+    top: 30%;
+    left: 6.5%;
+}
+
+
+.container img{
+    margin: 0;
+    margin-top: -30px;
+    width: 85vw;
+    height: 90vh;
+    -webkit-box-shadow: 2px 7px 19px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 7px 19px -7px rgba(0,0,0,0.75);
+box-shadow: 2px 7px 19px -7px rgba(0,0,0,0.75);
+   border-radius: 15px;
+}
+
+.container .palavras{
+    color: #ededed;
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+}
+
+.logotipo{
+    width: 12rem;
+    margin-left: 20%;
+}
+
+.container .palavras h2{
+    font-size: 60px;
+}
+
+.container .palavras p{
+    text-align: center;
+    font-size: 23px;
+}
+
+.cepbase{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22rem;
+}
+
+.cep input{
+    width: 60vw;
+    height: 8vh;
+    padding: 1rem;
+    font-size: 20px;
+    border: 2px solid #FED504;
+    outline: none;
+    border-radius: 67px;
+    position: relative;
+}
+
+.cep i{
+    width: 10px;
+    position: absolute;
+}
+
+i{
+    position: absolute;
+    margin-right: 100rem;
+}
+
+
+.mapa iframe{
+    float: right;
+    margin-right: 110px;
+    margin-top: 5.1rem;
+    width: 45vw;
+    height: 65vh;
+    margin-bottom: 30px;
+    border-radius: 35px;
+    
+}
+
+.areacomentarios{
+    margin-top: 80px;
+    width: 36vw;
+    height: 65vh;
+    padding: 0;
+    overflow-y: scroll;
+    margin-left: 3rem;
+}
+
+.comentario{
+    background-color: #e0e0e0;
+    width: 25vw;
+    height: 17vh;
+    margin-left: 6rem;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+}
+
+#margem{
+    margin-top: 50px;
+}
+
+.local{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+.comentario img{
+    margin-top: 30px;
+    width: 5vw;
+    height: 7vh;
+    right: 30px;
+    position: absolute;
+    border: 3px solid #FD5A8C;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar{
+    background-color: rgb(200, 200, 200);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0236a6;
+}
+
+.areacomentarios::-webkit-scrollbar{
+    background-color: rgb(200, 200, 200);
+}
+
+.areacomentarios::-webkit-scrollbar-thumb{
+    background-color: #0000005a;
+    transition: 0.5s all ease;
+}
+
+.areacomentarios::-webkit-scrollbar-thumb:hover{
+    background-color: #000000a9;
+    transition: 0.5s all ease;
+}
+
+.parceria h2{
+    font-size: 50px;
+    margin-top: 7rem;
+    text-align: center;
+    font-weight: bold;
+    color: #010851;
+}
+
+.centroindex{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.parceria img{
+    width: 600px;
+}
+
+.parceria button{
+    width: 20vw;
+    height: 8vh;
+    background-color: #0236a6;
+    color: #fff;
+    border-radius: 45px;
+    border: none;
+    font-size: 24px; 
+    margin-top: 3rem;
+    transition: 0.5s all ease;
+}
+
+.parceria p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 20px;
+}
+
+.parceria button:hover{
+    transition: 0.5s all ease;
+    background-color: #FD5A8C;
+}
+
+.teste{
+    border: 2px solid white;
+}

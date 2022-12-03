@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+:root{
+    --azul: #0236A6;
+    --ciano: #20ACE8;
+    --roxo: #B415F5;
+    --rosa: #FD5A8C;
+    --amarelo: #FED504;
+    --subtitulo: #010851;
+    --azul-claro: #98DCEE;
+}
+
+#cabecalho .link-home img{
+    width:12rem;
+    margin-left: 35%;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    -webkit-box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: -3px -7px 30px 0px rgba(0,0,0,0.75);
+}
+
+
+#cabecalho .lista {
+    display: flex;
+    list-style-type: none;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 5%;
+}
+
+#cabecalho .lista a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+    font-weight: 650;
+    transition: .2s ease-in-out;
+}
+
+#cabecalho .lista #selecionado {
+    color: var(--azul);
+}
+
+#cabecalho .lista a:hover {
+    color: var(--azul);
+}
+
+#cabecalho .lista .login{
+    border: 1px solid var(--azul);
+    padding: 0 10px;
+    border-radius: 50px;    
+}
+
+.perfil{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38em;
+}
+
+.perfil .lado{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    background: var(--azul-claro);
+    flex-direction: column;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.perfil .lado img{
+    margin-top: 15px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.perfil .lado i{
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.perfil .lado .texto{
+    margin: 40px 10px;
+}
+
+.perfil .lado .texto .secao{
+    padding: 20px 0;
+}
+
+.perfil .lado .texto .topicos{
+    font-size: 20px;
+}
+
+.perfil .lado .texto .resposta{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.perfil .principal {
+    margin: 15px;
+    width: 60%;
+    height: 90%;
+}
+
+.perfil .principal .crianca{
+    margin: 20px;
+    display: flex;
+    position: relative;
+}
+
+.perfil .principal .menu .crianca input{
+    padding: 20px;
+    width: 70%;
+    outline: none;
+    border: 1px solid black;
+    border-right: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.perfil .principal .menu .crianca .btn{
+    width: 20%;
+    position: relative;
+}
+
+.perfil .principal .menu .crianca .btn button{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+    background-color: var(--roxo);
+    color: #fff;
+    border-radius: 30px 10px 10px 30px;
+    border: 1px solid black;
+    outline: none;
+    position: absolute;
+    right: 20%;
+    
+}
+
+.perfil .principal .menu .crianca .btn i{
+    position: absolute;
+    top: 32%;
+    right: 30%;
+    z-index: 1;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.perfil .principal .menu .filtros{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.perfil .principal .menu .filtros .btn1,
+.perfil .principal .menu .filtros .btn2,
+.perfil .principal .menu .filtros .btn3,
+.perfil .principal .menu .filtros .btn4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 7rem;
+}
+
+.perfil .principal .menu .filtros .btn1 button,
+.perfil .principal .menu .filtros .btn2 button,
+.perfil .principal .menu .filtros .btn3 button,
+.perfil .principal .menu .filtros .btn4 button{
+    width: 40%;
+    height: 100%;
+    font-size: 36px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.perfil .principal .menu .filtros.hide{
+    display: none;
+}
+
+.perfil .principal .menu .filtros.show{
+    display: block;
+}
+
+.perfil .principal .menu .filtros .btn1 p,
+.perfil .principal .menu .filtros .btn2 p,
+.perfil .principal .menu .filtros .btn3 p,
+.perfil .principal .menu .filtros .btn4 p{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.perfil .principal .menu .filtros .btn1 button{
+    background-color: var(--rosa);
+}
+
+.perfil .principal .menu .filtros .btn2 button{
+    background-color: var(--amarelo);
+}
+
+.perfil .principal .menu .filtros .btn3 button{
+    background-color: var(--azul);
+}
+
+.perfil .principal .menu .filtros .btn4 button{
+    background-color: var(--azul-claro);
+}
+
+.perfil .principal .menu .cursos-slider{
+    margin-top: 5%;
+    text-align: center;
+    background: #D9D9D966;
+    height: 18rem;
+    border-radius: 10px;
+}
+
+.perfil .principal .menu .cursos-slider h2{
+    padding-top: 10px;
+}
+
+.perfil .principal .menu .cursos-slider .cursos1{
+    padding: 10px;
+    margin-left: 30px;
+    width: 252px;
+}
+
+.perfil .principal .menu .cursos-slider .cursos1 img{
+    width: 250px;
+}
+
+.perfil .principal .menu .cursos-slider .cursos1 .endereco{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(200, 200, 200);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0236a6;
+}

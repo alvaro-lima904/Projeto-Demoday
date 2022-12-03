@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+
+    <!----font awesome---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- font awesome 2  -->
+    <script src="https://kit.fontawesome.com/5fb524d3df.js"></script>
+
+    <!-- swiper cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/perfil.css">
+    <title>Demoday - Perfil</title>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <a href="home.html" class="link-home"><img src="img/logo.png" alt=""></a>
+        <ul class="lista">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Demoday/cursos.html">Cursos</a></li>
+            <li><a href="Demoday/empresa.html">Empresa</a></li>
+            <li><a href="Demoday/sobre.html">Sobre</a></li>
+            <li><a href="#" id="selecionado">Perfil</a></li>
+            <li class="login"><a href="Demoday/login.html">Login</a></li>
+            <li class="login"><a href="Demoday/cadastrocrianca.html">Cadastro</a></li>
+        </ul>
+    </header>
+
+    <section class="perfil">
+        <article class="lado">
+            <i class="fas fa-gear"></i>
+            <img src="img/pic-4-2.png" alt="">
+
+            <div class="texto">
+                <div class="secao">
+                    <h2 class="topicos">Adriana Pereira dos Santos</h2>
+                    <p class="resposta">Responsável</p>
+                </div>
+
+                <div class="secao">
+                    <h2 class="topicos">Endereço</h2>
+                    <p class="resposta">Rua Pedro Almeida Santo, 78 <br> São Paulo - SP</p>
+                </div>
+
+                <div class="secao">
+                    <h2 class="topicos">E-mail</h2>
+                    <p class="resposta">Adriano765@gmail.com</p>
+                </div>
+
+            </div>
+        </article>
+
+        <section class="principal">
+            <div class="menu">
+                <form action="#" class="crianca">
+                    <input type="text" placeholder="Nome do Filho">
+                    <div class="btn">
+                        <button>Idade</button>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </form>
+
+                <div class="filtros">
+                    <div class="btn1">
+                        <button id="matriculas item" onclick="matriculas()" data-name="matriculas"><i class="fas fa-graduation-cap"></i></button>
+                        <p>Minhas <br> Matrículas </p>
+                    </div>
+                    <div class="btn2">
+                        <button id="cursos item" onclick="cursos()" data-name="favoritos"> <i class="far fa-heart"></i></button>
+                        <p>Cursos <br> Favoritos</p>
+                    </div>
+                    <div class="btn3">
+                        <button id="historico item"  onclick="historico()" data-name="historico"><i class="fas fas fa-book-reader"></i></button>
+                        <p>Histórico de <br> Cursos</p>
+                    </div>
+                    <!-- <div class="btn4">
+                        <button><i class="fas fa-arrow-trend-up"></i></button>
+                        <p>Meu <br> Desempenho</p>
+                    </div> -->
+                </div>
+
+                <div class="swiper cursos-slider">
+                    <h2 id="subtitulo">Minhas Matriculas</h2>
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide cursos1" data-name="favoritos">
+                            <img src="img/esporte1.png" alt="">
+                            <div class="endereco">
+                                <h4>ONG Aliança</h4>
+                                <p>Escolinha de futebol</p>
+                                <p>Av. Decio de Toledo Leite, 557</p>
+                                <p>(11) 12345-9343</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide cursos1" data-name="">
+                            <img src="img/musica3.png" alt="">
+                            <div class="endereco">
+                                <h4>Pombas Urbanas</h4>
+                                <p>Curso de Instrumento</p>
+                                <p>Av. Decio de Toledo Leite, 557</p>
+                                <p>(11) 12345-9343</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide cursos1" data-name="">
+                            <img src="img/musica2.png" alt="">
+                            <div class="endereco">
+                                <h4>Instituto Musical</h4>
+                                <p>Curso de Instrumento</p>
+                                <p>Av. Decio de Toledo Leite, 557</p>
+                                <p>(11) 12345-9343</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide cursos1" data-name="favoritos">
+                            <img src="img/arte5.png" alt="">
+                            <div class="endereco">
+                                <h4>ONG Aliança</h4>
+                                <p>Escolinha de futebol</p>
+                                <p>Av. Decio de Toledo Leite, 557</p>
+                                <p>(11) 12345-9343</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+
+    
+    <!-- swiper js cdn link  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script src="js/perfil.js"></script>
+</body>
+
+</html>
