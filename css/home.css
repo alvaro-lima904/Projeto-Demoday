@@ -283,7 +283,7 @@ section {
     color: var(--ciano);
 }
 
-.video {
+/* .video {
     width: 100%;
     height: 700px;
     display: block;
@@ -319,7 +319,7 @@ section {
     margin-top: 40px;
     font-weight: 500;
     line-height: 1.5;
-}
+} */
 
 .comentarios {
     margin-top: 2rem;
