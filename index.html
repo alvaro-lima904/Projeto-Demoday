@@ -9,31 +9,34 @@
     <meta name="keywords" content="">
     <meta name="robots" content="index, follow">
 
-    <!----font awesome---->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!-- swiper cdn link  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <!-- link css  -->
-    <link rel="stylesheet" href="css/home.css">
-    <title>Demoday - Grupo 6</title>
+    <title>Novo Olhar</title>
 </head>
 
 <body>
 
-    <section class="corpo">
+    <div class="corpo">
         <header id="cabecalho">
-            <a href="index.html" class="link-home"><img src="img/logo.png" alt=""></a>
-            <ul class="lista">
-                <li><a href="#" id="selecionado">Home</a></li>
-                <li><a href="Demoday/cursos.html">Cursos</a></li>
-                <li><a href="Demoday/empresa.html">Empresa</a></li>
-                <li><a href="Demoday/sobre.html">Sobre</a></li>
-                <li><a href="perfil.html">Perfil</a></li>
-                <li class="login"><a href="Demoday/login.html">Login</a></li>
-                <li class="login"><a href="Demoday/cadastrocrianca.html">Cadastro</a></li>
-            </ul>
+            <a href="home.html" class="link-home"><img src="img/logo.png" alt=""></a>
+            <nav class="lista">
+                <a href="#" id="selecionado">Home</a>
+                <a href="Demoday/cursos.html">Cursos</a>
+                <a href="Demoday/empresa.html">Empresa</a>
+                <a href="Demoday/sobre.html">Sobre</a>
+                <a href="perfil.html">Perfil</a>
+                <a class="login" href="Demoday/login.html">Login</a>
+                <a class="login" href="Demoday/cadastrocrianca.html">Cadastro</a>
+            </nav>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
         </header>
 
 
@@ -44,23 +47,22 @@
                 <h2> <span>O melhor começo</span> <br> para um mundo de possibilidades!</h2>
 
                 <form class="formulario">
-                    <input type="text" placeholder="Nome da Criança:" required>
-                    <input type="text" placeholder="Idade:" required>
-                    <input type="text" id="endereco" placeholder="Endereço:" required>
-                    <button class="btn"><a href="Demoday/cursos.html">Iniciar</a></button>
+                    <input type="text" id="endereco" placeholder="CEP:" required>
+                    <input type="text" placeholder="Gênero:" required>
+                    <input type="text" placeholder="Data Nascimento:" required>
+                    <input type="submit" value="Iniciar" class="btn"> <a href="Demoday/cursos.html"></a>
                 </form>
 
-                
+
 
             </div>
 
 
             <div class="imagem">
                 <img src="img/container.png" alt="">
-
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="cursos" id="cursos">
 
@@ -130,16 +132,11 @@
             </div>
 
             <div class="mostrar-mais">
-
                 <button class="fas fa-chevron-circle-down" id="btn"></button>
-
             </div>
 
         </div>
-
     </section>
-
-
 
     <section class="video">
 
@@ -151,9 +148,7 @@
 
     </section>
 
-
-    <!-- COMENTÁRIOS -->
-
+    
     <section class="comentarios">
 
         <h2 class="subtitulo">Revisão dos usuários</h2>
@@ -217,8 +212,6 @@
 
     </section>
 
-    <!-- COMPANHIA -->
-
     <section class="companhia">
 
         <h2 class="subtitulo">Queremos o melhor para o seu filho</h2>
@@ -260,11 +253,7 @@
             </div>
         </div>
 
-
-
     </section>
-
-    <!-- SOBRE -->
 
     <section class="sobre">
 
@@ -282,17 +271,6 @@
             </div>
 
             <div class="cards">
-                <div class="texto">
-                    <h3>Duvidas Frequentes</h3>
-
-                    <p>E se a minha matricula não for aprovada? <br> O que é matrícula digital</p>
-                </div>
-                <img src="img/sobre-2.jpeg" alt="">
-                <button>Saiba Mais</button>
-
-            </div>
-
-            <div class="cards">
 
                 <div class="texto">
                     <h3>Sobre Nós</h3>
@@ -306,23 +284,11 @@
 
     </section>
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- swiper js cdn link  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
 
     <script src="js/script.js"></script>
