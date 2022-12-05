@@ -1,0 +1,1245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --azul: #0236A6;
+    --ciano: #20ACE8;
+    --roxo: #B415F5;
+    --rosa: #FD5A8C;
+    --amarelo: #FED504;
+    --subtitulo: #010851;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.corpo {
+    display: flex;
+    background: var(--azul);
+    height: 80vh;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    -webkit-box-shadow: -3px -7px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -3px -7px 30px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -3px -7px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+#cabecalho .link-home img {
+    height: 3em;
+    margin-left: 15em;
+}
+
+#cabecalho .lista {
+    width: 45%;
+}
+
+#cabecalho .lista a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+    font-weight: 650;
+    font-size: 16px;
+    margin-right: .5em;
+}
+
+#cabecalho .lista a:hover,
+#cabecalho .lista #selecionado {
+    color: var(--azul);
+}
+
+#cabecalho .lista .login {
+    border: 1px solid var(--azul);
+    padding: 0 10px;
+    border-radius: 50px;
+    height: 24px;
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--azul);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.corpo .container {
+    background: var(--amarelo);
+    height: 75vh;
+    width: 79%;
+    margin-top: 10rem;
+    margin-left: 15rem;
+    border-radius: 35px;
+    box-shadow: 9px 4px 20px #2b2b2b50;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.corpo .container .imagem {
+    margin-top: -.2em;
+    width: 58%;
+}
+
+.corpo .container img {
+    width: 100%;
+    height: auto;
+}
+
+.corpo .container #quadrado {
+    width: 50em;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 11px 12px 17px #47474730;
+    margin-left: 1em;
+    margin-top: 60px;
+}
+
+.corpo .container #quadrado h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 2;
+    color: rgba(0, 0, 0, 84%);
+}
+
+.corpo .container #quadrado .formulario {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.corpo .container #quadrado .formulario input {
+    background: #fff;
+    border: 1px solid var(--azul);
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 48%;
+    color: #000;
+    margin: 7px 2px;
+}
+
+.corpo .container #quadrado .formulario #endereco {
+    width: 98%;
+}
+
+.corpo .container #quadrado .formulario .btn {
+    margin-top: 40px;
+    padding: 5px;
+    width: 122px;
+    height: 38px;
+    background-color: var(--ciano);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.corpo .container #quadrado .formulario .btn:hover {
+    background: var(--azul);
+
+}
+
+.corpo .container #quadrado .formulario .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cursos {
+    margin-top: 15rem;
+}
+
+.cursos h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.cursos .input-box input {
+    width: 100%;
+    height: 53px;
+    color: #000;
+    background: #FED5044D;
+    position: relative;
+    font-size: 1.7rem;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 1px solid #aaa;
+    outline: none;
+    padding: 0 2.85rem 0 1rem;
+}
+
+.cursos .input-box input::placeholder {
+    color: #777;
+    font-weight: 600;
+}
+
+.cursos .input-box {
+    position: relative;
+    width: 45em;
+    margin: auto;
+}
+
+.input-box span {
+    position: absolute;
+    right: 13px;
+    cursor: pointer;
+    line-height: 53px;
+    color: #707070;
+    font-size: 1.7rem;
+}
+
+.cursos .opcoes {
+    background: url(../img/fundo-cursos.png) repeat-y;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.cursos .opcoes .opcoes-slider {
+    margin-top: 5%;
+    margin-left: 2.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cursos .opcoes .opcoes-slider h3 {
+    margin-left: 3%;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--subtitulo);
+}
+
+.cursos .opcoes #hide {
+    display: none;
+}
+
+.curss .opcoes .opcoes-slider .imagem-cursos {
+    width: 100%;
+}
+
+.cursos .opcoes .opcoes-slider .imagem-cursos img {
+    width: 35rem;
+    height: 185px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.cursos .opcoes .mostrar-mais {
+    margin: 5rem auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20px;
+}
+
+.cursos .opcoes .mostrar-mais button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 7rem;
+    background: transparent;
+    color: var(--amarelo);
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.cursos .opcoes .mostrar-mais button:hover {
+    color: var(--ciano);
+}
+
+/* .video {
+    width: 100%;
+    height: 700px;
+    display: block;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    position: relative;
+}
+
+.video video {
+    width: 80rem;
+    border: 15px solid var(--azul);
+    border-radius: 20px;
+}
+
+.video .descricao {
+    width: 60rem;
+    background: var(--amarelo);
+    height: 500px;
+    position: absolute;
+    top: 40px;
+    right: 18rem;
+    z-index: -1;
+    border: 15px solid var(--rosa);
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+}
+
+.video .descricao p {
+    font-size: 36px;
+    width: 300px;
+    margin-top: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+} */
+
+.comentarios {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.comentarios h2 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--subtitulo);
+}
+
+.comentarios .enviar {
+    margin-top: 57px;
+    display: flex;
+    align-items: center;
+}
+
+.comentarios .enviar img {
+    width: 7rem;
+    height: auto;
+    margin-left: 5%;
+}
+
+.comentarios .enviar .send input {
+    width: 65vw;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #0E0E0E80;
+    padding: 2px;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.comentarios .revisao {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comentarios .revisao .usuarios {
+    border-radius: .5rem;
+    padding: 2.5rem;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    width: 250px;
+    margin: 10px 20px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.comentarios .revisao .usuarios img {
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #000;
+    position: absolute;
+    top: 5%;
+}
+
+.comentarios .revisao .usuarios .estrelas {
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 32%;
+}
+
+.comentarios .revisao .usuarios p {
+    color: #0E0E0ECC;
+    position: absolute;
+    top: 47%;
+    text-align: justify;
+    max-width: 240px;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.comentarios .revisao .usuarios::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--azul);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 23rem;
+    width: 150%;
+    z-index: -1;
+}
+
+.comentarios .revisao #user-1,
+.comentario .revisao #user-1 img {
+    border: 2px solid var(--ciano);
+}
+
+.comentarios .revisao #user-1::before {
+    background: var(--ciano);
+}
+
+.comentarios .revisao #user-2,
+.comentario .revisao #user-2 img {
+    border: 2px solid var(--roxo);
+}
+
+.comentarios .revisao #user-2::before {
+    background: var(--roxo);
+}
+
+.comentarios .revisao #user-3,
+.comentario .revisao #user-3 img {
+    border: 2px solid var(--azul);
+}
+
+.comentarios .revisao #user-3::before {
+    background: var(--azul);
+}
+
+.comentarios .revisao #user-4,
+.comentario .revisao #user-4 img {
+    border: 2px solid var(--rosa);
+}
+
+.comentarios .revisao #user-4::before {
+    background: var(--rosa);
+}
+
+/* =============================================COMPANHIAS======================================================== */
+
+.companhia {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.companhia h2 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 32px;
+    color: var(--subtitulo);
+}
+
+.companhia .anotacoes {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.companhia .anotacoes .parte-1 {
+    width: 55rem;
+    display: flex;
+    justify-content: center;
+}
+
+.companhia .anotacoes .parte-1 .mensagem {
+    margin: 30px;
+    width: 20rem;
+    height: 10rem;
+    padding: 20px;
+    background: var(--rosa);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+}
+
+.companhia .anotacoes .parte-1 .mensagem::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid var(--rosa);
+    border-bottom: 43px solid var(--rosa);
+    border-top: 43px solid white;
+    border-right: 20px solid white;
+    z-index: -1;
+
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 99%;
+}
+
+.companhia .anotacoes .parte-1 img {
+    width: 20rem;
+    margin-top: 60px;
+}
+
+.companhia .anotacoes .parte-2 {
+    width: 55rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.companhia .anotacoes .parte-2 .mensagem {
+    margin: 30px;
+    width: 25rem;
+    height: 11rem;
+    padding: 20px;
+    background: var(--amarelo);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 0px;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+}
+
+.companhia .anotacoes .parte-2 .mensagem::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid white;
+    border-bottom: 48px solid var(--amarelo);
+    border-top: 48px solid white;
+    border-right: 15px solid var(--amarelo);
+    z-index: 0;
+    display: block;
+    position: absolute;
+    top: 12.5%;
+    left: -12%;
+}
+
+.companhia .anotacoes .parte-2 img {
+    width: 20rem;
+    margin-top: 75px;
+}
+
+.companhia .anotacoes-2 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.companhia .anotacoes-2 .parte-3 {
+    width: 55rem;
+    display: flex;
+    justify-content: center;
+}
+
+.companhia .anotacoes-2 .parte-3 .mensagem2 {
+    margin: 30px;
+    width: 25rem;
+    height: 12rem;
+    padding: 20px;
+    background: var(--ciano);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 0px;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+}
+
+.companhia .anotacoes-2 .parte-3 .mensagem2::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid var(--ciano);
+    border-bottom: 52px solid var(--ciano);
+    border-top: 52px solid white;
+    border-right: 15px solid white;
+    z-index: -1;
+
+    display: block;
+    position: absolute;
+    top: 13.5%;
+    left: 99.5%;
+}
+
+.companhia .anotacoes-2 .parte-3 img {
+    width: 25rem;
+    margin-top: 60px;
+}
+
+.companhia .anotacoes-2 .parte-4 {
+    width: 55rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.companhia .anotacoes-2 .parte-4 .mensagem2 {
+    margin: 30px;
+    width: 22rem;
+    height: 12rem;
+    padding: 20px;
+    background: var(--roxo);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 0px;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+}
+
+.companhia .anotacoes-2 .parte-4 .mensagem2::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid white;
+    border-bottom: 52px solid var(--roxo);
+    border-top: 52px solid white;
+    border-right: 15px solid var(--roxo);
+    z-index: 0;
+    display: block;
+    position: absolute;
+    top: 12.5%;
+    left: -15.5%;
+}
+
+.companhia .anotacoes-2 .parte-4 img {
+    width: 30rem;
+}
+
+/* =================================================SOBRE========================================================= */
+
+.sobre{
+    margin-top: 5rem;
+}
+
+.sobre h2{
+    text-align: center;
+    font-size: 32px;
+    color: var(--subtitulo);
+    display: flex;
+    justify-content: space-around;
+}
+
+.sobre .descricao{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sobre .descricao .cards{
+    padding: 20px;
+    width: 404px;
+    height: 465px;
+    border: 1px solid var(--rosa);
+    border-radius: 48px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.sobre .descricao .cards .texto{
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    top: 5%;
+    font-size: 18px;
+}
+
+.sobre .descricao .cards .texto h3{
+    margin-bottom: 20px;
+    color: var(--subtitulo);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.sobre .descricao .cards img{
+    width: 20rem;
+    position: absolute;
+    top: 40%;
+}
+
+.sobre .descricao .cards button{
+    margin-top: 20px;
+    padding: 7px;
+    width: 120px;
+    background: var(--rosa);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    border-radius: 64px;
+    position: absolute;
+    bottom: 8%;
+    cursor: pointer;
+}
+
+.sobre .descricao .cards button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    #cabecalho .link-home img{
+        margin-left: 5rem;
+    }
+
+    #cabecalho .lista a {
+        font-size: 14px;
+    }
+
+    .corpo .container {
+        width: 90%;
+        margin-left: 5rem;
+    }
+
+    .corpo .container .imagem img {
+        width: 95%;
+    }
+
+    .corpo .container #quadrado {
+        width: 35em;
+        margin-top: 3em;
+        margin-left: 3em;
+    }
+
+    .cursos .opcoes .opcoes-slider .imagem-cursos a {
+        margin-right: 1rem;
+    }
+
+    .cursos .opcoes .opcoes-slider .imagem-cursos img {
+        width: 90%;
+    }
+
+    .video video {
+        width: 70.5rem;
+        position: absolute;
+        left: 3rem;
+    }
+
+    .video .descricao {
+        width: 70rem;
+        height: 43rem;
+        top: 4rem;
+        right: 5rem;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .video .descricao p {
+        width: 300px;
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    .comentarios .revisao .usuarios p {
+        line-height: 1.2;
+        top: 50%;
+    }
+
+    .companhia .anotacoes .parte-1 .mensagem {
+        width: 25rem;
+        height: 11rem;
+        font-size: 16px;
+    }
+
+    .companhia .anotacoes .parte-1 .mensagem::after {
+        border-left: 20px solid var(--rosa);
+        border-bottom: 41.5px solid var(--rosa);
+        border-top: 41.5px solid white;
+        border-right: 20px solid white;
+        top: 14%;
+        left: 99%;
+    }
+
+    .companhia .anotacoes .parte-1 img {
+        width: 20rem;
+    }
+
+    .companhia .anotacoes .parte-2 {
+        width: 55rem;
+    }
+
+    .companhia .anotacoes .parte-2 .mensagem {
+        width: 25rem;
+        height: 11rem;
+        font-size: 16px;
+    }
+
+    .companhia .anotacoes .parte-2 .mensagem::after {
+        border-left: 15px solid white;
+        border-bottom: 44px solid var(--amarelo);
+        border-top: 43px solid white;
+        border-right: 15px solid var(--amarelo);
+        top: 11%;
+        left: -12.2%;
+    }
+
+    .companhia .anotacoes .parte-2 img {
+        width: 20rem;
+        margin-top: 25px;
+    }
+
+    .companhia .anotacoes-2 .parte-3 .mensagem2 {
+        width: 25rem;
+        height: 18rem;
+        font-size: 16px;
+    }
+
+    .companhia .anotacoes-2 .parte-3 .mensagem2::after {
+        border-left: 15px solid var(--ciano);
+        border-bottom: 70.5px solid var(--ciano);
+        border-top: 70.5px solid white;
+        border-right: 15px solid white;
+        top: 11%;
+        left: 99.5%;
+    }
+
+    .companhia .anotacoes-2 .parte-4 .mensagem2 {
+        width: 23rem;
+        height: 12rem;
+        font-size: 16px;
+    }
+
+    .companhia .anotacoes-2 .parte-4 .mensagem2::after {
+        border-left: 15px solid white;
+        border-bottom: 46px solid var(--roxo);
+        border-top: 45px solid white;
+        border-right: 15px solid var(--roxo);
+        top: 13.5%;
+        left: -14%;
+    }
+
+    .companhia .anotacoes-2 .parte-4 img {
+        width: 25rem;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    #cabecalho {
+        padding: 2rem;  
+    }
+
+    #cabecalho .lista {
+        width: 50%;
+    }
+
+    .corpo .container #quadrado {
+        width: 40rem;
+    }
+
+    .cursos .opcoes .opcoes-slider .imagem-cursos a {
+        margin-right: -7rem;
+    }
+
+    .cursos .opcoes .opcoes-slider .imagem-cursos img {
+        width: 80%;
+    }
+
+    .video video {
+        width: 90%;
+        position: absolute;
+        left: 5rem;
+    }
+
+    .video .descricao {
+        width: 90%;
+        top: 30rem;
+        align-items: flex-end;
+        justify-content: center;
+        left: 5rem;
+        right: 0;
+    }
+
+    .video .descricao p {
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    .companhia .anotacoes .parte-1 .mensagem::after {
+        border-left: 20px solid var(--rosa);
+        border-bottom: 42px solid var(--rosa);
+        border-top: 41px solid white;
+        border-right: 20px solid white;
+    }
+
+    .companhia .anotacoes .parte-2 .mensagem {
+        width: 25rem;
+        height: 11.3rem;
+        font-size: 16px;
+    }
+
+    .companhia .anotacoes .parte-2 .mensagem::after {
+        top: 12.5%;
+    }
+
+    .companhia .anotacoes-2 .parte-3 .mensagem2 {
+        width: 25rem;
+        height: 18rem;
+    }
+
+    .companhia .anotacoes-2 .parte-4 .mensagem2 {
+        width: 23rem;
+        height: 12rem;
+    }
+
+    .companhia .anotacoes-2 .parte-4 .mensagem2::after {
+        border-left: 15px solid white;
+        border-bottom: 46px solid var(--roxo);
+        border-top: 45.5px solid white;
+        border-right: 15px solid var(--roxo);
+        top: 13%;
+        left: -14.1%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        scroll-padding-top: 0;
+    }
+
+    body {
+        padding-bottom: 6rem;
+    }
+
+    #cabecalho .link-home img{
+        margin-left: 1rem;
+    }
+
+    #menu-btn {
+        display: initial;
+    }
+
+    .corpo #cabecalho .lista {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: .5rem;
+        width: 30rem;
+        border: 1px solid var(--azul);
+        background: #fff;
+        height: 30rem;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .corpo #cabecalho .lista.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+
+    .corpo #cabecalho .lista a {
+        font-size: 1.5rem;
+        display: block;
+        margin: 1.8rem;
+    }
+
+    .corpo .container {
+        width: 94%;
+        margin-left: 2.5rem;
+        align-items: center;
+    }
+
+    .corpo .container #quadrado {
+        width: 35em;
+        margin-top: 0;
+    }
+
+    .corpo .container #quadrado h2 {
+        font-size: 2rem;
+    }
+
+    .corpo .container #quadrado .formulario input {
+
+        width: 100%;
+    }
+
+    .corpo .container .imagem img {
+        width: 98%;
+    }
+
+    .cursos .opcoes .opcoes-slider .imagem-cursos a {
+        margin-right: 6rem;
+    }
+
+    .cursos .opcoes .opcoes-slider .imagem-cursos img {
+        width: 100%;
+    }
+
+    .video video {
+        width: 96%;
+        position: absolute;
+        left: 1rem;
+    }
+
+    .video .descricao {
+        width: 96%;
+        top: 23rem;
+        right: 0;
+        left: 1rem;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .video .descricao p {
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    .companhia .anotacoes .parte-1 {
+        width: 50rem;
+        
+    }
+
+    .companhia .anotacoes .parte-2 {
+        width: 53rem;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 452px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    #cabecalho .link-home img{
+        margin-left: 2rem;
+    }
+
+    #menu-btn{
+        margin-right: 2rem;
+    }
+
+    .corpo .container {
+        width: 85%;
+        margin-left: 4rem;
+    }
+
+    .corpo .container #quadrado {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .corpo .container .imagem {
+        display: none;
+    }
+
+    .cursos .opcoes .opcoes-slider .subtitulo {
+        margin: 0 auto;
+    }
+
+    .cursos .opcoes .opcoes-slider .imagem-cursos a {
+        margin-right: 0;
+    }
+
+    .cursos .opcoes .opcoes-slider .imagem-cursos img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .video {
+        margin-left: 0;
+        height: 400px;
+    }
+
+    .video video {
+        width: 85%;
+        position: absolute;
+        left: 4rem;
+    }
+
+    .video .descricao {
+        width: 85%;
+        top: 4rem;
+        height: 45rem;
+        left: 4rem;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .video .descricao p {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    .companhia .anotacoes .parte-1 .mensagem {
+        height: 14rem;
+    }
+
+    .companhia .anotacoes .parte-1 .mensagem::after {
+       border-bottom: 49px solid var(--rosa);
+        border-top: 48px solid white;
+        top: 13%;
+    }
+
+    .companhia .anotacoes .parte-2 .mensagem {
+        height: 12rem;
+    }
+
+    .companhia .anotacoes .parte-2 .mensagem::after {
+        top: 10%;
+        left: -14%;
+    }
+
+    .companhia .anotacoes-2 .parte-3 .mensagem2 {
+        height: 20rem;
+    }
+
+    .companhia .anotacoes-2 .parte-3 .mensagem2::after {
+       border-bottom: 71px solid var(--ciano);
+        border-top: 71px solid white;
+        top: 11.5%;
+    }
+
+    .companhia .anotacoes-2 .parte-4 .mensagem2 {
+        height: 15rem;
+    }
+
+    .companhia .anotacoes-2 .parte-4 .mensagem2::after {
+        border-bottom: 52px solid var(--roxo);
+        border-top: 52px solid white;
+        top: 13.5%;
+        left: -16.2%;
+    }
+
+    .sobre .descricao .cards .texto{
+        font-size: 16px;
+    }
+
+}
